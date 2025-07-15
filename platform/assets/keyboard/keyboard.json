@@ -1,0 +1,95 @@
+{
+  "defaultLayoutObject": {
+    "default": [
+      "` 1 2 3 4 5 6 7 8 9 0 - = {backspace}",
+      "{tab} q w é r t y ü í ó p [ ] \\",
+      "{capslock} á s d f g h j k l ; ' {enter}",
+      "{shiftleft} z x c v b n m , . / {shiftright}",
+      "{metaleft} {space} {metaright}"
+    ],
+    "shift": [
+      "~ ! @ # $ % ^ & * ( ) _ + {backspace}",
+      "{tab} Q W E R T Y U I O P { } |",
+      "{capslock} A S D F G H J K L : \" {enter}",
+      "{shiftleft} Z X C V B N M &lt; &gt; ? {shiftright}",
+      "{metaleft} {space} {metaright}"
+    ]
+  },
+  "alternateLayoutObject": {
+    "default": [
+      "` 1 2 3 4 5 6 7 8 9 0 - = {backspace}",
+      "{tab} q w e r t y u i o p [ ] \\",
+      "{capslock} a s d f g h j k l ; ' {enter}",
+      "{shiftleft} z x c v b n m , . / {shiftright}",
+      "{metaleft} {space} {metaright}"
+    ],
+    "shift": [
+      "~ ! @ # $ % ^ & * ( ) _ + {backspace}",
+      "{tab} Q W E R T Y U I O P { } |",
+      "{capslock} A S D F G H J K L : \" {enter}",
+      "{shiftleft} Z X C V B N M &lt; &gt; ? {shiftright}",
+      "{metaleft} {space} {metaright}"
+    ]
+  },
+  "buttonThemes": [],
+  "settings": {
+    "languageSwitchKeys": {
+      "left": "🌐",
+      "right": "🌐"
+    },
+    "enablePhysicalKeyboard": true,
+    "enableCharacterConversion": true,
+    "autoCapitalize": false
+  },
+  "characterReplacements": {
+    "\u0060": "\u0027",
+    "\u02bc": "\u0027",
+    "\u2019": "\u0027",
+    "\u0063\u030c": "\u010d",
+    "\u0067\u030c": "\u01e7",
+    "\u0068\u030c": "\u021f",
+    "\u0073\u030c": "\u0161",
+    "\u007a\u030c": "\u017e",
+    "\u0048\u030c": "\u021e"
+  },
+  "keyCodesConversions": {
+    "Digit4": "á",
+    "Digit5": "é",
+    "Digit6": "í",
+    "Digit7": "ó",
+    "Digit8": "ú",
+    "KeyQ": "ǧ",
+    "KeyR": "š",
+    "KeyX": "ž",
+    "KeyC": "č",
+    "KeyJ": "ȟ"
+  },
+  "charCombosTreatedAsOneChar": [
+    "čʼ",
+    "kʼʷ",
+    "qʼʷ",
+    "x̣ʷ",
+    "áa",
+    "ée",
+    "óo",
+    "cʼ",
+    "kʼ",
+    "kʷ",
+    "lʼ",
+    "ƛʼ",
+    "mʼ",
+    "nʼ",
+    "pʼ",
+    "qʼ",
+    "qʷ",
+    "tʼ",
+    "wʼ",
+    "xʷ",
+    "x̣",
+    "yʼ",
+    "oo",
+    "ee",
+    "aa",
+    "ə́"
+  ]
+}

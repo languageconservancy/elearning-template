@@ -1,0 +1,51 @@
+# Application Configuration
+export DEBUG="true"
+export APP_NAME="eLearning Sample"
+export APP_AUTHOR="The Language Conservancy"
+export APP_ENCODING="UTF-8"
+export APP_DEFAULT_LOCALE="en_US"
+
+# Security Configuration
+export SECURITY_SALT="__SALT__"
+
+# Cache Configuration
+export CACHE_DURATION="+2 minutes"
+export CACHE_DEFAULT_URL="file://tmp/cache/?prefix=${APP_NAME}_default&duration=${CACHE_DURATION}"
+export CACHE_CAKECORE_URL="file://tmp/cache/persistent?prefix=${APP_NAME}_cake_core&serialize=true&duration=${CACHE_DURATION}"
+export CACHE_CAKEMODEL_URL="file://tmp/cache/models?prefix=${APP_NAME}_cake_model&serialize=true&duration=${CACHE_DURATION}"
+
+# Email Transport Configuration
+export EMAIL_TRANSPORT_HOST="mailhog"
+export EMAIL_TRANSPORT_PORT="25"
+export EMAIL_TRANSPORT_USERNAME="username"
+export EMAIL_TRANSPORT_PASSWORD="password"
+export EMAIL_TRANSPORT_DEFAULT_URL=""
+export EMAIL_TRANSPORT="default"
+export EMAIL_FROM="elearning@localhost"
+
+# Database Configuration
+export DATABASE_HOST="localhost"
+export DATABASE_USERNAME="root"
+export DATABASE_PASSWORD="root"
+export DATABASE_NAME="elearning_db"
+export DATABASE_URL=""
+
+# Logging Configuration
+export LOG_DEBUG_URL=""
+export LOG_ERROR_URL=""
+
+# AWS Configuration
+export AWSUPLOAD="true"
+export SITEUPLOAD="true"
+export AWSAPIKEY=""
+export AWSAPISECRET=""
+export AWSBUCKETNAME=""
+export AWSREGION="us-west-2"
+export AWS_LINK=""
+
+# Application Specific Configuration
+export CLASSROOMPATHID="6"
+export ALLUNITSLEVELID="122"
+export FROENTEND_LINK="http://localhost/"
+export ADMIN_LINK="http://localhost/backend/"
+export LANGUAGE="MyLanguage"

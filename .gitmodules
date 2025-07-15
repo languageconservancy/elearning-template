@@ -1,0 +1,9 @@
+[submodule "backend"]
+	path = ../../backend
+	url = git@github.com-petevieiratlc:languageconservancy/elearning-backend.git
+[submodule "frontend"]
+	path = ../../frontend
+	url = git@github.com-petevieiratlc:languageconservancy/elearning-web-app.git
+[submodule "elearning-mock-assets"]
+	path = ../../mock-assets
+	url = git@github.com-petevieiratlc:languageconservancy/elearning-mock-assets.git

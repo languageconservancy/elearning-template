@@ -1,0 +1,21 @@
+{
+  "name": "elearning-platform-template",
+  "version": "1.0.0",
+  "description": "Template for creating a new elearning platform",
+  "workspaces": [
+    "core/frontend"
+  ],
+  "scripts": {
+    "core": "node scripts/proxy.js",
+    "update-core": "git submodule update --remote",
+    "init": "git submodule update --init --recursive",
+    "clean": "rm -rf ./core/frontend/dist"
+  },
+  "keywords": [
+    "elearning",
+    "platform",
+    "template"
+  ],
+  "author": "Language Conservancy",
+  "license": "MIT"
+}

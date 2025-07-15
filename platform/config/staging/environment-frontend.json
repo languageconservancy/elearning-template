@@ -1,0 +1,21 @@
+{
+  "production": false,
+  "API": "http://localhost/backend/api/",
+  "ROOT": "http://localhost:4200/",
+  "GOOGLE_CLIENT_ID_WEB": "your-google-client-id-web.apps.googleusercontent.com",
+  "GOOGLE_API_KEY": "AIzaSyA-example-google-api-key",
+  "FACEBOOK_APP_ID": "123456789012345",
+  "CLEVER_ID": "clever-id-placeholder",
+  "LOGIN_URI": "http://localhost:4200/",
+  "SITE_NAME": "My eLearning Platform",
+  "LANGUAGE": "MyLanguageEnglish",
+  "LANGUAGE_NATIVE": "MyLanguageNative",
+  "SITE_OWNER": "MyLanguage Community Council",
+  "GOOGLE_PLAY_STORE_URL": "https://play.google.com/store/apps/details?id=org.mylanguage.app",
+  "ITUNES_STORE_URL": "https://apps.apple.com/app/id1234567890",
+  "APP_ID": "org.mylanguage.app",
+  "IOS_APP_ID_NUMBER": "1234567890",
+  "ANDROID_FLAVOR_IOS_SCHEME": "mylanguage-ios-scheme",
+  "GOOGLE_CLIENT_ID_IOS": "your-google-client-id-ios.apps.googleusercontent.com",
+  "ENABLE_SOCIAL_LOGINS": "true"
+}

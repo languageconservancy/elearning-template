@@ -1,0 +1,23 @@
+{
+  "components": {
+    "dashboard": {
+      "pathMessageReviewFireUltra": "Wow!",
+      "pathMessageLessonsFireHigh": "We thank you!",
+      "pathMessageLessonsFireUltra": "Awesome!"
+    },
+    "spread-the-word": {
+      "spreadTheWord": "The language is in decline. It is your commitment to learning the language, speaking it, writing it, and sharing it with others that is key to carrying it into the future. We will carry the language into the future."
+    },
+    "reward-popups": {
+      "congrats": {
+        "congrats_1": "Good job!",
+        "congrats_2": "Nice!",
+        "congrats_3": "Wow!",
+        "congrats_4": "Awesome!",
+        "congrats_5": "Excellent!",
+        "congrats_6": "Fantastic!"
+      },
+      "wrongAnswerPopups": ["Too bad!", "Tough luck!"]
+    }
+  }
+}
