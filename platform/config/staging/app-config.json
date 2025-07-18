@@ -1,5 +1,5 @@
 {
-  "production": false,
+  "production": true,
   "apiUrl": "http://localhost/backend/api/",
   "webUrl": "http://localhost:4200/",
   "googleClientIdWeb": "your-google-client-id-web.apps.googleusercontent.com",
@@ -10,7 +10,7 @@
   "facebookClientToken": "123456789012345",
   "cleverId": "clever-id-placeholder",
   "loginUri": "http://localhost:4200/",
-  "appName": "My eLearning Platform",
+  "appName": "My eLearning Platform Staging",
   "languageEnglish": "MyLanguageEnglish",
   "languageNative": "MyLanguageNative",
   "appOwner": "MyLanguage Community Council",
@@ -18,7 +18,6 @@
   "itunesStoreUrl": "https://apps.apple.com/app/id1234567890",
   "appId": "org.mylanguage.app",
   "iosAppIdNumber": "1234567890",
-  "androidFlavorIosScheme": "mylanguage-ios-scheme",
   "androidVersionCode": "1.0.0",
   "androidVersionName": "1",
   "androidMainImports": ["com.codetrixstudio.capacitor.GoogleAuth.GoogleAuth"],

@@ -1,6 +1,6 @@
 # Application Configuration
 export DEBUG="true"
-export APP_NAME="eLearning Sample"
+export APP_NAME="Mock eLearning"
 export APP_AUTHOR="The Language Conservancy"
 export APP_ENCODING="UTF-8"
 export APP_DEFAULT_LOCALE="en_US"
@@ -22,11 +22,6 @@ export DATABASE_USERNAME="root"
 export DATABASE_PASSWORD="root"
 export DATABASE_NAME="mock_elearning_db"
 
-export TEST_DATABASE_HOST="localhost"
-export TEST_DATABASE_USERNAME="root"
-export TEST_DATABASE_PASSWORD="root"
-export TEST_DATABASE_NAME="test_elearning_db"
-
 # AWS Configuration
 export AWSUPLOAD="true"
 export SITEUPLOAD="true"
@@ -37,8 +32,8 @@ export AWSREGION="us-west-2"
 export AWS_LINK=""
 
 # Application Specific Configuration
-export CLASSROOMPATHID="6"
-export ALLUNITSLEVELID="122"
-export FROENTEND_LINK="http://localhost/"
+export CLASSROOMPATHID="0"
+export ALLUNITSLEVELID="0"
+export FROENTEND_LINK="http://localhost:4200/"
 export ADMIN_LINK="http://localhost/backend/"
 export LANGUAGE="MyLanguage"

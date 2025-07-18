@@ -91,5 +91,6 @@
     "ee",
     "aa",
     "ə́"
-  ]
+  ],
+  "allWordCharsRegex": "a-zA-Z"
 }
