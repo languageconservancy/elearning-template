@@ -1,6 +1,6 @@
 # Application Configuration
 export DEBUG="true"
-export APP_NAME="Mock eLearning"
+export APP_NAME="eLearning Demo"
 export APP_AUTHOR="The Language Conservancy"
 export APP_ENCODING="UTF-8"
 export APP_DEFAULT_LOCALE="en_US"
@@ -20,7 +20,7 @@ export EMAIL_FROM="elearning@localhost"
 export DATABASE_HOST="localhost"
 export DATABASE_USERNAME="root"
 export DATABASE_PASSWORD="root"
-export DATABASE_NAME="mock_elearning_db"
+export DATABASE_NAME="elearning_demo_db"
 
 # AWS Configuration
 export AWSUPLOAD="true"

@@ -10,7 +10,7 @@
   "facebookClientToken": "123456789012345",
   "cleverId": "clever-id-placeholder",
   "loginUri": "http://localhost:4200/",
-  "appName": "My eLearning Platform",
+  "appName": "eLearning Local",
   "languageEnglish": "MyLanguageEnglish",
   "languageNative": "MyLanguageNative",
   "appOwner": "MyLanguage Community Council",

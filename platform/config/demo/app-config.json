@@ -10,7 +10,7 @@
   "facebookClientToken": "",
   "cleverId": "",
   "loginUri": "http://localhost:4200/",
-  "appName": "Mock eLearning Platform",
+  "appName": "eLearning Demo",
   "languageEnglish": "MyLanguageEnglish",
   "languageNative": "MyLanguageNative",
   "appOwner": "MyLanguage Community Council",

@@ -195,7 +195,7 @@ This template uses the following core submodules:
 
 - **frontend**: Angular application
 - **backend**: CakePHP application
-- **mock-assets**: Mock assets for development
+- **demo-assets**: Mock assets for development
 
 ## Troubleshooting
 
