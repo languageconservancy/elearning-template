@@ -2,17 +2,23 @@
 
 This is a starter template for creating a new elearning platform. It uses a submodule approach where the core platform is a git submodule and platform-specific content is managed separately.
 
+# Ways to Use This Template
+
+1. Clone this repo and edit the remote origin and push to newly created repo that you own.
+1. Fork this repo and clone it from your own account.
+
 ## Quick Start
 
-1. **Fork this template** to your organization
-2. **Clone your fork**:
+1. **Fork this template** to your organization and name it the name of your platform/app.
+
+1. **Clone your fork**:
 
    ```bash
-   git clone https://github.com/your-org/your-platform.git
+   git clone git@github.com:your-org/your-platform.git
    cd your-platform
    ```
 
-3. **Initialize the core submodules**:
+1. **Initialize the core submodules**:
 
    ```bash
    npm run init
@@ -20,130 +26,65 @@ This is a starter template for creating a new elearning platform. It uses a subm
    git submodule update --init --recursive
    ```
 
-4. **Customize your platform**:
+1. **Install dependencies**:
 
-   - Edit `platform-assets/` with your content
-   - Update `platform-config.json` with your settings
-   - Modify environment files in `platform-assets/environments/`
-
-5. **Build your platform**:
    ```bash
-   npm run build
-   # or
-   ./build.sh
+   npm run core install-dependencies
+   ```
+
+1. **Customize your platform**:
+
+   - Edit `platform/assets/` with your content
+   - Update `platform/config/` with your settings
+
+1. **Upload demo database to phpMyAdmin**:
+
+   - Import core/demo/elearning_demo_db.sql to phpMyAdmin
+
+1. **Copy demo assets to core/backend/webroot**:
+
+   ```bash
+   npm run core copy-demo-assets
+   ```
+
+1. **Set the environment variable for your local web server root directory**:
+   This example points to where MAMP places its web server root.
+
+   ```bash
+   echo "export WWW_PATH='/Applications/MAMP/htdocs'" >> ~/.bash_profile
+   ```
+
+1. **Copy backend to your local web server root directory**:
+
+   ```bash
+   npm run core update-local-backend
+   ```
+
+1. **Build and Serve your platform**:
+   ```bash
+   npm run serve:demo
    ```
 
 ## File Structure
 
-```
-template/
-├── build.sh                 # Build script
-├── package.json             # NPM scripts
-├── .gitmodules              # Git submodule definitions
-├── platform-config.json     # Platform configuration
-├── platform-assets/         # Platform-specific content
-│   ├── assets/
-│   │   ├── images/          # Platform images (logo, favicon, etc.)
-│   │   ├── fonts/           # Custom fonts
-│   │   └── scss/            # Platform-specific styles
-│   ├── translations/        # Platform translations
-│   ├── environments/        # Environment configuration files
-│   └── backend-config/      # Backend configuration files
-└── README.md               # This file
-```
-
-## Platform Customization
-
-### 1. Platform Configuration
-
-Edit `platform-config.json` to set your platform metadata:
-
-```json
-{
-  "platform": {
-    "name": "my-platform",
-    "displayName": "My Learning Platform",
-    "language": "en",
-    "region": "US"
-  }
-}
-```
-
-### 2. Platform Assets
-
-#### Images
-
-Place your platform-specific images in `platform-assets/assets/images/`:
-
-- `logo.png` - Your platform logo
-- `favicon.ico` - Your platform favicon
-- `hero-image.jpg` - Hero/banner images
-
-#### Styles
-
-Create custom styles in `platform-assets/assets/scss/`:
-
-- `_platform-theme.scss` - Override default theme variables
-- `_custom-components.scss` - Custom component styles
-
-#### Fonts
-
-Add custom fonts to `platform-assets/assets/fonts/`
-
-### 3. Translations
-
-Add platform-specific translations in `platform-assets/translations/`:
-
-- `en.json` - English translations
-- `es.json` - Spanish translations
-- etc.
-
-### 4. Environment Configuration
-
-Configure environment-specific settings in `platform-assets/environments/`:
-
-- `environment.local.ts` - Local development
-- `environment.staging.ts` - Staging environment
-- `environment.production.ts` - Production environment
-
-### 5. Backend Configuration
-
-Add backend configuration files in `platform-assets/backend-config/`:
-
-- `app.platform.php` - Platform-specific app config
-- `database.php` - Database configuration
-- `email.php` - Email configuration
+See the [elearning-core/README.md](https://github.com/languageconservancy/elearning-core)
 
 ## Build Process
 
 The build process:
 
-1. **Updates core submodules** to latest versions
-2. **Copies platform assets** to core directories
-3. **Builds frontend** using Angular CLI
-4. **Builds backend** using Composer
-5. **Outputs** to `frontend/dist/` and `backend/webroot/`
+1. **Copies platform assets** to core directories
+1. **Take your config variables and generates files from templates** in the core directories
+1. **Builds frontend** using Angular CLI
+1. **Outputs** to `frontend/dist/`
+1. **Updates Android & iOS projects** with latest web code
 
 ### Build Commands
 
+To see all the commands, run:
+
 ```bash
-# Build for production
-npm run build:production
-
-# Build for staging
-npm run build:staging
-
-# Build for local development
-npm run build:local
-
-# Serve for development
-npm run serve
-
-# Update core submodules
-npm run update-core
-
-# Clean build outputs
-npm run clean
+npm run core
 ```
 
 ## Development Workflow
@@ -185,17 +126,7 @@ npm run build:local
 ```bash
 # Build for production
 npm run build:production
-
-# Deploy frontend/dist/ and backend/webroot/
 ```
-
-## Core Submodules
-
-This template uses the following core submodules:
-
-- **frontend**: Angular application
-- **backend**: CakePHP application
-- **demo-assets**: Mock assets for development
 
 ## Troubleshooting
 
@@ -203,18 +134,12 @@ This template uses the following core submodules:
 
 1. Ensure submodules are initialized: `npm run init`
 2. Check that platform assets exist
-3. Verify environment files are correct
+3. Verify platofrm config files are correct
 
 ### Submodule Issues
 
 1. Update submodules: `npm run update-core`
 2. Reset submodules: `git submodule update --init --recursive --force`
-
-### Environment Issues
-
-1. Check environment files in `platform-assets/environments/`
-2. Verify API URLs and configuration
-3. Check backend configuration files
 
 ## Contributing
 
@@ -226,4 +151,4 @@ This template uses the following core submodules:
 
 ## License
 
-MIT License - see LICENSE file for details.
+Mozilla Public License - see LICENSE file for details.
