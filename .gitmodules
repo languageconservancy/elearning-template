@@ -1,7 +1,4 @@
 [submodule "core"]
 	path = core
-	url = git@github.com-petevieiratlc:languageconservancy/elearning-core.git
+	url = git@github.com:languageconservancy/elearning-core.git
 	branch = main
-[submodule "elearning-core"]
-	path = core
-	url = git@github.com-petevieiratlc:languageconservancy/elearning-core.git
