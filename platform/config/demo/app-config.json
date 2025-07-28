@@ -17,6 +17,7 @@
   "googlePlayStoreUrl": "",
   "itunesStoreUrl": "",
   "appId": "",
+  "iosAppIdNumber": "",
   "ogImage": "http://localhost:4200/assets/images/og_default.png",
   "ogDescription": "Learn the language of your community faster than ever.",
   "googleAnalyticsTagId": "",

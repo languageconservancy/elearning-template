@@ -17,6 +17,7 @@
   "googlePlayStoreUrl": "https://play.google.com/store/apps/details?id=org.mylanguage.app",
   "itunesStoreUrl": "https://apps.apple.com/app/id1234567890",
   "appId": "org.mylanguage.app",
+  "iosAppIdNumber": "",
   "ogImage": "https://local.elearning.com/assets/images/og_default.png",
   "ogDescription": "Learn the language of your community faster than ever.",
   "googleAnalyticsTagId": "",
