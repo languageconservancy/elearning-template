@@ -27,6 +27,6 @@ return [
     'ADMIN_LINK' => 'http://localhost/backend/',
 
     // Teacher Portal settings
-    'CLASSROOMPATHID' => 0,
+    'CLASSROOMPATHID' => 2,
     'ALLUNITSLEVELID' => 0,
 ];
