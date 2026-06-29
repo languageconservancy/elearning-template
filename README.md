@@ -2,6 +2,8 @@
 
 This is a starter template for creating a new elearning platform. It uses a submodule approach where the core platform is a git submodule and platform-specific content is managed separately.
 
+**New to this repo?** See [core/docs/getting-started/developing.md](core/docs/getting-started/developing.md) for setup and daily workflow. Open **`core/elearning-platform.code-workspace`** in Cursor/VS Code — it loads **project-root**, **core**, and **frontend** roots, to enable task menu and correct Angular linting.
+
 # Ways to Use This Template
 
 1. Clone this repo and edit the remote origin and push to newly created repo that you own.
@@ -47,11 +49,10 @@ This is a starter template for creating a new elearning platform. It uses a subm
    npm run core copy-demo-assets
    ```
 
-1. **Set the environment variable for your local web server root directory**:
-   This example points to where MAMP places its web server root.
+1. **Set local dev variables** — copy `scripts/local-dev-vars.example.sh` to `scripts/local-dev-vars.sh` and set `ELEARNING_WWW_PATH` to your Apache document root (see [local-server-setup.md](core/docs/getting-started/local-server-setup.md)):
 
    ```bash
-   echo "export WWW_PATH='/Applications/MAMP/htdocs'" >> ~/.bash_profile
+   cp scripts/local-dev-vars.example.sh scripts/local-dev-vars.sh
    ```
 
 1. **Copy backend to your local web server root directory**:
@@ -96,6 +97,7 @@ git clone your-platform-repo
 cd your-platform
 npm run init
 npm install
+npm run core install-dependencies
 ```
 
 ### 2. Development
@@ -124,8 +126,10 @@ npm run build:local
 ### 4. Deployment
 
 ```bash
-# Build for production
-npm run build:production
+# Update deployment variables in scripts/deploy-vars.sh
+
+# Build and deploy production environment frontend and backend to server
+./core/scripts/deploy.sh -t production -c install -f -b
 ```
 
 ## Troubleshooting
