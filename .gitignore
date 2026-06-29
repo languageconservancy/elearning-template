@@ -2,3 +2,4 @@ node_modules/
 .DS_Store
 platform/config/production/.env
 platform/config/staging/.env
+scripts/local-dev-vars.sh

@@ -2,7 +2,7 @@
 
 This is a starter template for creating a new elearning platform. It uses a submodule approach where the core platform is a git submodule and platform-specific content is managed separately.
 
-**New to this repo?** See [core/docs/getting-started/developing.md](core/docs/getting-started/developing.md) for setup and daily workflow. Open **`core/elearning-platform.code-workspace`** in Cursor/VS Code — it loads **project-root**, **core**, and **frontend** roots, to enable task menu and correct Angular linting.
+**New to this repo?** See [core/docs/getting-started/developing.md](core/docs/getting-started/developing.md) for setup and daily workflow. Open **`core/elearning-platform.code-workspace`** in Cursor/VS Code — it loads **project-root**, **core**, and **frontend** roots for the **eLearning:** task menu and correct Angular linting.
 
 # Ways to Use This Template
 
@@ -49,10 +49,10 @@ This is a starter template for creating a new elearning platform. It uses a subm
    npm run core copy-demo-assets
    ```
 
-1. **Set local dev variables** — copy `scripts/local-dev-vars.example.sh` to `scripts/local-dev-vars.sh` and set `ELEARNING_WWW_PATH` to your Apache document root (see [local-server-setup.md](core/docs/getting-started/local-server-setup.md)):
+1. **Set local dev variables** — run `npm run core init-language-repo-vars`, then edit `scripts/local-dev-vars.sh` ([language-repo-vars.md](core/docs/getting-started/language-repo-vars.md)):
 
    ```bash
-   cp scripts/local-dev-vars.example.sh scripts/local-dev-vars.sh
+   npm run core init-language-repo-vars
    ```
 
 1. **Copy backend to your local web server root directory**:
